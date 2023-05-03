@@ -49,5 +49,4 @@ sudo python3 ./gui-downgrade.py
 rm d.txt
 
 fi
-
-
+echo""
