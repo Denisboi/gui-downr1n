@@ -16,7 +16,7 @@ if [ "$os" = "Darwin" ]; then
   sudo pip3 install customtkinter Pillow
  fi
  echo "all done!"
- fi
+fi
 if [ "$os" = "Linux" ]; then 
  if [ "$EUID" -ne 0 ]; then
   echo "Please run with SUDO (as root)"
