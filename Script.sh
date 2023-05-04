@@ -10,7 +10,7 @@ if [ $os = "Darwin" ]; then
   if [ -d "other/" ] && [ ! -L "other/"]; then
    echo
   else
-   mkdir other 
+   mkdir -p other 
    cd other
    wget https://download.oxy.st/get/26306d294ecd0506ede55e15a4dfc8f9/other.zip
    unzip other.zip
@@ -36,7 +36,7 @@ if [ $os = "Linux" ]; then
 if [ -d "other/" ] && [ ! -L "other/"]; then
    echo
 else
-   mkdir other 
+   mkdir -p other 
    cd other
    wget https://download.oxy.st/get/26306d294ecd0506ede55e15a4dfc8f9/other.zip
    unzip other.zip
