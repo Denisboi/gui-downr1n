@@ -17,7 +17,9 @@ if [ $os = "Darwin" ]; then
    rm other.zip
    cd ..
   fi
- 
+  if [ ! -d "ipsw/" ]; then
+  mkdir ipsw
+  fi
  sudo python3 ./gui-downgrade.py
  rm d.txt
   
@@ -47,6 +49,9 @@ cp /dev/null d.txt
 echo "D" > d.txt
 sudo python3 ./gui-downgrade.py
 rm d.txt
+if [ ! -d "ipsw/" ]; then
+  mkdir ipsw
+ fi
 
 fi
 echo""
