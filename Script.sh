@@ -18,7 +18,7 @@ if [ $os = "Darwin" ]; then
    cd ..
   fi
   if [ ! -d "ipsw/" ]; then
-  mkdir ipsw
+  mkdir -p ipsw
   fi
  sudo python3 ./gui-downgrade.py
  rm d.txt
@@ -50,7 +50,7 @@ echo "D" > d.txt
 sudo python3 ./gui-downgrade.py
 rm d.txt
 if [ ! -d "ipsw/" ]; then
-  mkdir ipsw
+  mkdir -p ipsw
  fi
 
 fi
