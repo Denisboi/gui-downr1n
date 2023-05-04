@@ -2,7 +2,6 @@ import tkinter
 import os
 import customtkinter
 import time
-import subprocess
 from PIL import Image  
 
 class ToplevelWindow(customtkinter.CTkToplevel):
@@ -32,7 +31,7 @@ class Downgrade(customtkinter.CTkToplevel):
    def __init__(self, *args, **kwargs):
     super().__init__(*args, **kwargs)
     self.geometry("650x500")
-    self.label = customtkinter.CTkLabel(self, text="Downgrade, your device is" )
+    self.label = customtkinter.CTkLabel(self, text="Downgrade" )
     self.label.pack(padx=20, pady=20)
     self.title("Downgrade")
     self.ready = customtkinter.CTkButton(self, text="Ready", fg_color=("purple"), command=self.redy, hover_color=("gray"))
