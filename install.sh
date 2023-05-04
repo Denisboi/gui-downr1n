@@ -13,7 +13,7 @@ if [ "$os" = "Darwin" ]; then
   fi
  brew install libimobiledevice libusbmuxd git python@3.11 wget && python3 -m pip install pyimg4
  if ! python3 -c 'import customtkinter; exit(not customtkinter.find_loader("customtkinter"))' ||  ! python3 -c 'import PIL; exit(not PIL.find_loader("Pillow"))'; then
-  sudo pip3 install customtkinter Pillow
+  pip3 install customtkinter Pillow
  fi
  echo "all done!"
 fi
