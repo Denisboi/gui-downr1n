@@ -11,7 +11,7 @@ if [ "$os" = "Darwin" ]; then
     # Install Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
- brew install libimobiledevice libusbmuxd git python@3.11 && python3 -m pip install pyimg4
+ brew install libimobiledevice libusbmuxd git python@3.11 wget && python3 -m pip install pyimg4
  if ! python3 -c 'import customtkinter; exit(not customtkinter.find_loader("customtkinter"))' ||  ! python3 -c 'import PIL; exit(not PIL.find_loader("Pillow"))'; then
   sudo pip3 install customtkinter Pillow
  fi
