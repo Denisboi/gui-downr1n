@@ -115,22 +115,7 @@ class App(customtkinter.CTk):
             
     
      def boots(self):
-         ios = customtkinter.CTkInputDialog(text="Type in an ios", title="Which an ios?")
-         self.vers = ios.get_input()
-    
-         if self.vers == "14.0" or self.vers == "14.0.1" or self.vers == "14.1" or self.vers == "14.2" or self.vers == "14.3" or self.vers == "14.4" or self.vers == "14.5" or self.vers == "14.4.1" or self.vers == "14.4.2" or self.vers == "14.5.1" or self.vers == "14.6" or self.vers == "14.7" or self.vers == "14.7.1" or self.vers == "14.8" or self.vers == "15.0" or self.vers == "15.0.1" or self.vers == "15.0.2" or self.vers == "15.1" or self.vers == "15.2" or self.vers == "15.2.1" or self.vers == "15.3" or self.vers == "15.3.1" or self.vers == "15.4" or self.vers == "15.4.1" or self.vers == "15.5" or self.vers == "15.6" or self.vers == "15.6.1" or self.vers == "15.7" or self.vers == "15.7.1" or self.vers == "15.7.2" or self.vers =="15.7.3" or self.vers == "15.7.4":
-          
-          os.system("sudo bash ./downr1n.sh --boot " + self.vers)
-          
-          self.text = customtkinter.CTkLabel(self, text="Look in the terminal", font=("/binaries/py/ofont.ru_Lilita One.ttf",14))
-          self.text.place(relx=0.5, rely=0.4, anchor=tkinter.CENTER)
-     
-         elif self.vers == "15.7.5":
-          self.text = customtkinter.CTkLabel(self, text="15.7.5 - latest ios", font=("/binaries/py/ofont.ru_Lilita One.ttf",14))
-          self.text.place(relx=0.5, rely=0.4, anchor=tkinter.CENTER)  
-         else:
-          self.text = customtkinter.CTkLabel(self, text="Ios incorrect", font=("/binaries/py/ofont.ru_Lilita One.ttf",14))
-          self.text.place(relx=0.5, rely=0.4, anchor=tkinter.CENTER) 
+         os.system("sudo ./downr1n.sh --boot")
     
              
 if __name__ == "__main__":
