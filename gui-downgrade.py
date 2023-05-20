@@ -3,7 +3,12 @@ import os
 import customtkinter
 import time
 from PIL import Image  
-
+try:
+    filee = open('d.txt', 'r')
+    filee.close()
+except:
+    print("Open with .sh file!")
+    exit()
 class ToplevelWindow(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -79,13 +84,6 @@ class App(customtkinter.CTk):
         self.label2.place(relx=0.5, rely=0.05, anchor=tkinter.CENTER)
         self.toplevel_window = None
 
-        try:
-         filee = open('d.txt', 'r')
-         filee.close()
-        except:
-         print("Open with .sh file!")
-         exit()
-        
 
      
      def owngrade(self):
